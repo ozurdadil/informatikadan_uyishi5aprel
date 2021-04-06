@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>6-aprel berilgan uyga vazifa</title>
+</head>
+<body>
+    <div class="container">
+        <div class="inner_container">
+            <h1>Temur's homework</h1>
+        <h2 class="ppp">P ni topish uchun</h2>
+        <div class="btn" id="pid" onclick="myFunc1()"><p>Meni bosing</p></div>
+        <h2 class="rrr">r ni topish uchun</h2>
+        <div class="btn" id="rid" onclick="myFunc2()"><p>Meni bosing</p></div>
+        <h2 class="yyy">y ni topish uchun</h2>
+        <div class="btn" id="yid" onclick="myFunc3()"><p>Meni bosing</p></div>
+        </div>
+    </div>
+</body>
+<script>
+    let pa,pb,pc,p,kva,r,kvb,y,yx,mj2,mj3,srt2,srt3,q;
+    function myFunc1(){
+        pa=+prompt('A ni kiriting');
+        pb=+prompt('A ni kiriting');
+        pc=+prompt('A ni kiriting');
+        p = (pa+pb+pc)/2;
+        document.getElementById('pid').innerHTML=p;
+    }
+    function myFunc2(){
+        kva = +prompt('A ni kiriting');
+        kvb = +prompt('B ni kiriting');
+        srt2 = kva*kva*kvb*kvb;
+        mj2 = kva+kvb;
+        r=srt2/mj2;
+        document.getElementById('rid').innerHTML=r
+    }
+    function myFunc3(){
+        yx = +prompt('x ni kiriting')
+        y = (1+yx)/2*(1-yx)
+        document.getElementById('yid').innerHTML=y
+    }
+</script>
+</html>
